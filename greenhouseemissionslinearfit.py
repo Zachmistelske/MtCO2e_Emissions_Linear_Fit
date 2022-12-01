@@ -15,9 +15,10 @@ h.hist(bins=100, figsize=(15, 10))
 plt.show()
 
 c=h['Year']/h['Avg_Emissions']
-u=h['Year']
-r=h['Avg_Emissions']
+r=h['Year']
 v=r.astype(int)
+uu=h['Avg_Emissions']
+u=uu.astype(int)
 
 q=h['StdDev']
 # make a linear point plot of data set displaying errors to each y-value
@@ -71,8 +72,8 @@ print('uncertainty in a:',errora)
 print('uncertainty in b:',errorb)
 print('chi-squared:',chis)
 
-plt.xlabel('Year')
-plt.ylabel('Avg MtCO2e Emissions')
+plt.xlabel('Avg MtCO2e Emissions')
+plt.ylabel('Year')
 plt.legend()
 plt.show()
 
